@@ -142,14 +142,8 @@ h1 {
     margin: 0 auto;
 }
 
-.concept_title_2 {
-    font-size: 100px;
+.concept_title span {
     color: #ff9000;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: -200px;
-    text-align: start;
-    padding-left: 10%;
     text-shadow: 1px 1px 20px white;
 }
 
@@ -238,4 +232,53 @@ h2 {
 
 h2 img {
     max-width: 210px;
+}
+
+.slider_service_img {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 960px;
+}
+
+.servise_p_frame {
+    margin: 0 auto;
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+    max-width: 780px;
+    background-color: #ffd400;
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+}
+
+.service_title {
+    max-width: 635px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_title_LP {
+    max-width: 95.5029px;
+}
+
+.service_title_cording {
+    max-width: 75.2334px;
+}
+
+.service_title_photo {
+    max-width: 51.8686px;
+}
+
+.service_title_banner {
+    max-width: 89.6455px;
+}
+
+.slider_service_p {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.slider_service_p ul {
+    text-align: start;
 }

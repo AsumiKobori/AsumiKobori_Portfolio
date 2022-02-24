@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小堀明日美│ポートフォリオサイト</title>
+    <!-- はんなり明朝 -->
     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- スライダー -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -47,9 +58,8 @@
 
     <section class="CONCEPT">
 
-        <p class="concept_title">「　　」の出逢いを、<br>「　　」の繋がりへ。
-        </p>
-        <p class="concept_title_2">一瞬<br>一生
+        <p class="concept_title">「<span>一瞬</span>」の出逢いを、<br>
+            「<span>一生</span>」の繋がりへ。
         </p>
 
         <p class="concept_sub">世界の総人口、約79億人</p>
@@ -74,9 +84,89 @@
 
         <h2><img src="images\title_SERVICE.png" alt="サービス一覧"></h2>
 
+        <div class="slider_service_img">
+
+            <div>
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_LP.png" alt="サービス内容_LPデザイン">
+                </picture>
+            </div>
+
+
+            <div>
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_cording.png" alt="サービス内容_コーディング">
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_photo.png" alt="サービス内容_撮影・画像編集">
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_banner.png" alt="サービス内容_バナー制作">
+                </picture>
+            </div>
+
+        </div>
+
+        <div class="servise_p_frame">
+
+            <div class="slider_service_title">
+
+                <div class="service_title">
+                    <div class="service_title_LP"><img src="images\PC_SERVICE_subtitle_LP.png" alt=""></div>
+                    <div class="service_title_cording"><img src="images\PC_SERVICE_subtitle_cording.png" alt=""></div>
+                    <div class="service_title_photo"><img src="images\PC_SERVICE_subtitle_photo.png" alt=""></div>
+                    <div class="service_title_banner"><img src="images\PC_SERVICE_subtitle_banner.png" alt=""></div>
+                </div>
+
+            </div>
+
+            <div class="slider_service_p">
+
+                <ul class="_service_p">
+                    <li>会社・お店・個人事業主などWEBサイト制作を行っております。コーディングにはHTML/CSS/jQueryを使用しております。</li>
+                    <li>いいいいいいいいいいいいいいいいいいいい</li>
+                    <li>うううううううううううううううううううう</li>
+                    <li>ええええええええええええええええええええ</li>
+                </ul>
+
+            </div>
+        </div>
+
     </section>
 
+    <script>
+        $(function () {
 
+            $('.slider_service_img').slick({
+                // autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: false,
+                fade: true,
+                asNavFor: '.service_title'//.slider_service_titleと連携
+            });
+
+            // $('.service_title').slick({
+            //     dots: false,
+            //     arrows: false,
+            //     asNavFor: '.slider_service_img',//.slider_service_imgと連携
+            //     slidesToShow: 4
+            // });
+
+
+        });
+
+    </script>
 </body>
 
 </html>
