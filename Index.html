@@ -160,20 +160,81 @@
     </section>
 
 
+
+    <!--↓↓↓お試し用-----おわったら消す↓↓↓ -->
+
+
+    <div class="tab_box">
+
+        <div class="panel_area">
+
+            <div class="tab_panel active">
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_LP.png" alt="サービス内容_LPデザイン">
+                </picture>
+            </div>
+            <div class="tab_panel">
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_cording.png" alt="サービス内容_コーディング">
+                </picture>
+            </div>
+            <div class="tab_panel">
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_photo.png" alt="サービス内容_撮影・画像編集">
+                </picture>
+            </div>
+            <div class="tab_panel">
+                <picture>
+                    <source srcset="あああ" media="(max-width: 767px)">
+                    <img src="images\PC_SERVICE_img_banner.png" alt="サービス内容_バナー制作">
+                </picture>
+            </div>
+        </div>
+
+        <div class="btn_area">
+            <p class="tab_btn active">タブ1</p>
+            <p class="tab_btn">タブ2</p>
+            <p class="tab_btn">タブ3</p>
+            <p class="tab_btn">タブ4</p>
+        </div>
+
+        <div class="panel_area">
+            <div class="tab_panel active">
+                <p>タブ11111</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト11111
+                </p>
+            </div>
+            <div class="tab_panel">
+                <p>タブ22222</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト22222
+                </p>
+            </div>
+            <div class="tab_panel">
+                <p>タブ333333</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト33333
+                </p>
+            </div>
+            <div class="tab_panel">
+                <p>タブ444444</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト33333
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ↑↑↑お試し用-----おわったら消す↑↑↑ -->
+
+
     <script>
-        $(function () {
-
-            $('.slider_service_img').slick({
-                // autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                arrows: false,
-                fade: true,
-            });
 
 
-
-
+        $('.tab_box .tab_btn').click(function () {
+            var index = $('.tab_box .tab_btn').index(this);
+            $('.tab_box .tab_btn, .tab_box .tab_panel').removeClass('active');
+            $(this).addClass('active');
+            $('.tab_box .tab_panel').eq(index).addClass('active');
         });
 
     </script>
