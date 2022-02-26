@@ -25,7 +25,9 @@
     <section id="header">
         <header>
 
-            <div class="brown_back"></div>
+            <div class="brown_back_wrap">
+                <div class="brown_back"></div>
+            </div>
 
             <div class="header_Wrap">
                 <div class="header_wrap">
@@ -56,6 +58,24 @@
 
     </section>
 
+    <div class="sircle_1st">
+        <div class="sircle_1st_wrap">
+            <!-- コンセプト・サービスの装飾 -->
+            <div class="sircle1"></div>
+            <div class="sircle2"></div>
+            <div class="sircle3"></div>
+            <div class="sircle4"></div>
+            <div class="sircle5"></div>
+            <div class="sircle6"></div>
+            <div class="sircle7"></div>
+            <div class="sircle8"></div>
+            <div class="sircle9"></div>
+            <div class="sircle10"></div>
+
+        </div>
+    </div>
+
+
     <section class="CONCEPT">
 
         <p class="concept_title">「<span>一瞬</span>」の出逢いを、<br>
@@ -69,14 +89,7 @@
             そんな奇跡とも呼べる「一瞬」の出逢いを、「一生」の繋がりに変えていく。<br>
             デザインにはそんな力があると考えています。</p>
 
-        <!-- 装飾 -->
-        <div class="sircle1"></div>
-        <div class="sircle2"></div>
-        <div class="sircle3"></div>
-        <div class="sircle4"></div>
-        <div class="sircle5"></div>
-        <div class="sircle6"></div>
-        <div class="sircle7"></div>
+
 
     </section>
 
@@ -123,7 +136,8 @@
 
                 <div class="service_title">
                     <div class="service_title_LP"><img src="images\PC_SERVICE_subtitle_LP.png" alt=""></div>
-                    <div class="service_title_cording"><img src="images\PC_SERVICE_subtitle_cording.png" alt=""></div>
+                    <div class="service_title_cording"><img src="images\PC_SERVICE_subtitle_cording.png" alt="">
+                    </div>
                     <div class="service_title_photo"><img src="images\PC_SERVICE_subtitle_photo.png" alt=""></div>
                     <div class="service_title_banner"><img src="images\PC_SERVICE_subtitle_banner.png" alt=""></div>
                 </div>
@@ -133,16 +147,18 @@
             <div class="slider_service_p">
 
                 <ul class="_service_p">
-                    <li>会社・お店・個人事業主などWEBサイト制作を行っております。コーディングにはHTML/CSS/jQueryを使用しております。</li>
-                    <li>いいいいいいいいいいいいいいいいいいいい</li>
-                    <li>うううううううううううううううううううう</li>
-                    <li>ええええええええええええええええええええ</li>
+                    <li>WEBページのデザイン制作を承っております。ヒアリングをしっかり行い、プラン・ニーズに沿った最適な提案をさせていただきます。昨今のニーズに合わせた、スマートフォン、タブレット等のレスポンシブ対応も可能です。
+                    </li>
+                    <li>HTML/CSS/Javascript(jQuery)を使用し、様々なサイトのコーディングを行っております。コーディングのみのご依頼も承っております。お気軽にご相談ください。</li>
+                    <li>WEBサイト製作に使用する写真素材の撮影を承ります。また、Photoshopを使用した画像編集も可能です。</li>
+                    <li>バナーデザイン製作を行っております。目的に合わせたバナーデザインを作成いたします。掲載箇所に応じた複数デザイン作成も承ります。</li>
                 </ul>
 
             </div>
         </div>
 
     </section>
+
 
     <script>
         $(function () {
@@ -153,15 +169,9 @@
                 dots: false,
                 arrows: false,
                 fade: true,
-                asNavFor: '.service_title'//.slider_service_titleと連携
             });
 
-            // $('.service_title').slick({
-            //     dots: false,
-            //     arrows: false,
-            //     asNavFor: '.slider_service_img',//.slider_service_imgと連携
-            //     slidesToShow: 4
-            // });
+
 
 
         });
