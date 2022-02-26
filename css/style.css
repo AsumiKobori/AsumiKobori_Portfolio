@@ -305,7 +305,7 @@ h2 img {
     max-width: 210px;
 }
 
-.slider_service_img {
+.service_img {
     margin: 0 auto;
     margin-top: 40px;
     max-width: 960px;
@@ -316,7 +316,7 @@ h2 img {
     padding: 15px 15px 0;
     box-sizing: border-box;
     max-width: 780px;
-    background-color: #ffd400;
+    background-color: #cbad8c;
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
 }
@@ -328,35 +328,8 @@ h2 img {
     justify-content: space-between;
 }
 
-.service_title_LP {
-    max-width: 95.5029px;
-}
+/* サービスタブ */
 
-.service_title_cording {
-    max-width: 75.2334px;
-}
-
-.service_title_photo {
-    max-width: 51.8686px;
-}
-
-.service_title_banner {
-    max-width: 89.6455px;
-}
-
-.slider_service_p {
-    margin: 0 auto;
-    margin-top: 15px;
-    font-size: 15px;
-}
-
-.slider_service_p ul {
-    text-align: start;
-}
-
-/* ↓↓↓お試し用-----おわったら消す↓↓↓ */
-
-/*タブ実装*/
 .tab_box .btn_area {
     margin: 0 10px;
     display: -webkit-box;
@@ -366,15 +339,13 @@ h2 img {
 .tab_box .tab_btn {
     width: 188px;
     padding: 8px 0;
-    color: #333;
-    background: #f5f7f8;
     text-align: center;
     cursor: pointer;
     transition: all 0.2s ease 0s;
 }
 
 .tab_box .tab_btn + .tab_btn {
-    margin-left: 8px;
+    margin-left: 110px;
 }
 
 .tab_box .tab_btn:hover {
@@ -382,20 +353,30 @@ h2 img {
 }
 
 .tab_box .tab_btn.active {
-    background: #07539f;
-    color: #fff;
+    background: #ff9000;
+    border-radius: 50% 30% 20% 40%/50%;
 }
 
-.tab_box .panel_area {
-    border: solid 1px #e3ebf3;
-    padding: 20px;
+.tab_btn img {
+    height: 38.542px;
 }
 
-.tab_box .tab_panel {
+.tab_box .tab_panel1,
+.tab_box .tab_panel2 {
     display: none;
 }
 
-.tab_box .tab_panel.active {
+.tab_box .tab_panel1.active,
+.tab_box .tab_panel2.active {
     display: block;
 }
-/* ↑↑↑お試し用-----おわったら消す↑↑↑  */
+
+.tab_service_p {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.tab_panel2 p {
+    text-align: start;
+}
