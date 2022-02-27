@@ -418,20 +418,21 @@ h2 img {
 
 #WORK_book {
     position: relative;
-    width: 80%;
-    height: 705px;
-    margin: 0 auto;
-    /* background-color: #51330e; */
+    width: 960px;
+    height: 560px;
+    margin: 40px auto;
+    background-color: #51330e;
+    border: solid 3px black;
 }
-.page_first,
+
 .page_LP,
 .page_cording,
 .page_photo,
 .page_banner {
     background-color: #ff0;
+    width: 480px;
 }
 
-.page_first div,
 .page_LP div,
 .page_cording div,
 .page_photo div,
@@ -443,12 +444,6 @@ h2 img {
     display: flex;
     justify-content: space-between;
 }
-
-/* .page_LP,
-.page_cording,
-.page_photo,
-.page_banner {
-} */
 
 .page_LP img,
 .page_cording img,
@@ -473,3 +468,7 @@ h2 img {
     font-size: 15px;
     writing-mode: vertical-rl;
 }
+
+/* .page_first ul {
+    font-size: 15px;
+} */
