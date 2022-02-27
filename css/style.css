@@ -1,3 +1,5 @@
+/* No CSS */ /*# sourceMappingURL=style.css.map */
+
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/earlyaccess/hannari.css");
 
@@ -110,7 +112,7 @@ h1 {
 }
 
 .header_img {
-    width: 78.125%;
+    width: 1500px;
     z-index: 40;
     position: absolute;
     top: 60px;
@@ -125,12 +127,12 @@ h1 {
     top: 100%;
     left: 25%;
     z-index: 50;
+    line-height: 2.0258;
 }
 
 .pc_nav li {
     color: white;
     font-size: 29px;
-    line-height: 2.0258;
 }
 
 /* 装飾コンセプトからサービスまで */
@@ -297,13 +299,15 @@ h1 {
     margin-top: 100px;
 }
 
-h2 {
+.SERVICE h2 {
     text-align: center;
 }
 
 h2 img {
     max-width: 210px;
 }
+
+/* サービスタブ */
 
 .service_img {
     margin: 0 auto;
@@ -319,6 +323,7 @@ h2 img {
     background-color: #cbad8c;
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
+    position: relative;
 }
 
 .service_title {
@@ -327,8 +332,6 @@ h2 img {
     display: flex;
     justify-content: space-between;
 }
-
-/* サービスタブ */
 
 .tab_box .btn_area {
     margin: 0 10px;
@@ -350,15 +353,33 @@ h2 img {
 
 .tab_box .tab_btn:hover {
     background-color: #dce1e4;
+    border-radius: 50% 30% 20% 40%/50%;
 }
 
 .tab_box .tab_btn.active {
+    height: 38.542px;
     background: #ff9000;
     border-radius: 50% 30% 20% 40%/50%;
 }
 
-.tab_btn img {
+.tab_btn_w1 img {
+    width: 108.252px;
     height: 38.542px;
+}
+
+.tab_btn_w2 img {
+    width: 79.0664px;
+    height: 38.542px;
+}
+
+.tab_btn_w3 img {
+    width: 54.126px;
+    height: 38.542px;
+}
+
+.tab_btn_w4 img {
+    width: 92.2441px;
+    height: 38.543px;
 }
 
 .tab_box .tab_panel1,
@@ -379,4 +400,76 @@ h2 img {
 
 .tab_panel2 p {
     text-align: start;
+}
+
+/* ワーク */
+
+.WORK {
+    margin-top: 100px;
+}
+
+.WORK h2 {
+    text-align: center;
+}
+
+h2 img {
+    max-width: 120px;
+}
+
+#WORK_book {
+    position: relative;
+    width: 80%;
+    height: 705px;
+    margin: 0 auto;
+    /* background-color: #51330e; */
+}
+.page_first,
+.page_LP,
+.page_cording,
+.page_photo,
+.page_banner {
+    background-color: #ff0;
+}
+
+.page_first div,
+.page_LP div,
+.page_cording div,
+.page_photo div,
+.page_banner div {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .page_LP,
+.page_cording,
+.page_photo,
+.page_banner {
+} */
+
+.page_LP img,
+.page_cording img,
+.page_photo img,
+.page_banner img {
+    width: 255px;
+    height: 240px;
+}
+
+.page_LP h3,
+.page_cording h3,
+.page_photo h3,
+.page_banner h3 {
+    font-size: 19px;
+    writing-mode: vertical-rl;
+}
+
+.page_LP p,
+.page_cording p,
+.page_photo p,
+.page_banner p {
+    font-size: 15px;
+    writing-mode: vertical-rl;
 }
