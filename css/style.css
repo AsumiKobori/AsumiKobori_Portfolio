@@ -408,6 +408,27 @@ h2 img {
     margin-top: 100px;
 }
 
+.work_wrap {
+    position: relative;
+    background: #472405;
+    height: 700px;
+}
+
+.work_wrap::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 65px;
+    background-size: 65px 100%;
+    background-image: linear-gradient(135deg, #472405 25%, transparent 25%),
+        linear-gradient(225deg, #472405 25%, transparent 25%);
+    background-position: 0 0;
+}
+
 .WORK h2 {
     text-align: center;
 }
@@ -418,19 +439,37 @@ h2 img {
 
 #WORK_book {
     position: relative;
+    top: 25px;
     width: 960px;
     height: 560px;
     margin: 40px auto;
-    background-color: #51330e;
+    background-color: #764709;
     border: solid 3px black;
+    z-index: 100;
 }
 
+.page_first,
 .page_LP,
 .page_cording,
 .page_photo,
 .page_banner {
-    background-color: #ff0;
+    background-color: rgb(236, 202, 149);
     width: 480px;
+}
+
+.page_LP :first-child,
+.page_cording :first-child,
+.page_photo :first-child,
+.page_banner :first-child {
+    margin-top: 20px;
+}
+
+.page_LP :last-child,
+.page_cording :last-child,
+.page_photo :last-child,
+.page_banner :last-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .page_LP div,
@@ -439,6 +478,8 @@ h2 img {
 .page_banner div {
     background-color: #ffffff;
     margin: 0 auto;
+    padding: 5px 15px;
+    box-sizing: border-box;
     width: 400px;
     height: 250px;
     display: flex;
@@ -451,6 +492,7 @@ h2 img {
 .page_banner img {
     width: 255px;
     height: 240px;
+    text-align: center;
 }
 
 .page_LP h3,
@@ -458,7 +500,9 @@ h2 img {
 .page_photo h3,
 .page_banner h3 {
     font-size: 19px;
+    color: #ff9000;
     writing-mode: vertical-rl;
+    text-align: center;
 }
 
 .page_LP p,
@@ -466,9 +510,16 @@ h2 img {
 .page_photo p,
 .page_banner p {
     font-size: 15px;
+    color: #472405;
     writing-mode: vertical-rl;
+    text-align: start;
 }
 
-/* .page_first ul {
+.page_first {
+    margin: 0 auto;
+    color: #472405;
+}
+
+.page_first ul {
     font-size: 15px;
-} */
+}
