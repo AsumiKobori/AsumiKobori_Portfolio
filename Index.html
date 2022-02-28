@@ -64,23 +64,6 @@
 
     </section>
 
-    <!-- コンセプト・サービスの装飾 -->
-    <div class="sircle_1st">
-        <div class="sircle_1st_wrap">
-            <div class="sircle1"></div>
-            <div class="sircle2"></div>
-            <div class="sircle3"></div>
-            <div class="sircle4"></div>
-            <div class="sircle5"></div>
-            <div class="sircle6"></div>
-            <div class="sircle7"></div>
-            <div class="sircle8"></div>
-            <div class="sircle9"></div>
-            <div class="sircle10"></div>
-
-        </div>
-    </div>
-
 
     <section class="CONCEPT">
 
@@ -322,9 +305,37 @@
 
     </section>
 
-    <!-- お試し用 -->
+    <section class="sircle_all">
+        <!-- コンセプト・サービスの装飾 -->
+        <div class="sircle_1st">
+            <div class="sircle_1st_wrap">
+                <div class="sircle1"></div>
+                <div class="sircle2"></div>
+                <div class="sircle3"></div>
+                <div class="sircle4"></div>
+                <div class="sircle5"></div>
+                <div class="sircle6"></div>
+                <div class="sircle7"></div>
+                <div class="sircle8"></div>
+                <div class="sircle9"></div>
+                <div class="sircle10"></div>
+            </div>
+        </div>
 
-
+        <div class="sircle_2nd">
+            <div class="sircle_2nd_wrap">
+                <div class="sircle11"></div>
+                <div class="sircle12"></div>
+                <div class="sircle13"></div>
+                <div class="sircle14"></div>
+                <div class="sircle15"></div>
+                <div class="sircle16"></div>
+                <div class="sircle17"></div>
+                <div class="sircle18"></div>
+                <div class="sircle19"></div>
+            </div>
+        </div>
+    </section>
 
 
     <script>
@@ -332,15 +343,14 @@
         $('.tab_box .tab_btn').click(function () {
             // SERVICE写真
             var index = $('.tab_box .tab_btn').index(this);
-            $('.tab_box .tab_btn, .tab_box .tab_panel1').removeClass('active');
+            $('.tab_box .tab_btn,.tab_box .tab_panel1').removeClass('active');
+            $('.tab_box .tab_btn,.tab_box .tab_panel2').removeClass('active');
             $(this).addClass('active');
-            $('.tab_box .tab_panel1').eq(index).fadeIn('active');
+            $('.tab_box .tab_panel1').hide();
+            $('.tab_box .tab_panel1').eq(index).fadeIn();
+            $('.tab_box .tab_panel2').hide();
+            $('.tab_box .tab_panel2').eq(index).fadeIn();
 
-            // SERVICE説明文
-            var index = $('.tab_box .tab_btn').index(this);
-            $('.tab_box .tab_btn, .tab_box .tab_panel2').removeClass('active');
-            $(this).addClass('active');
-            $('.tab_box .tab_panel2').eq(index).fadeIn('active');
         });
 
 
@@ -364,13 +374,7 @@
                 }
             );
 
-            $('#prevpage').click(function () {
-                $('#WORK_book').turn('previous');
-            });
 
-            $('#nextpage').click(function () {
-                $('#WORK_book').turn('next');
-            });
 
         });
 
