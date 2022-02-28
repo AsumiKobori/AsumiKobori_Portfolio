@@ -28,8 +28,9 @@
 </head>
 
 <body>
-    <section id="header">
-        <header>
+
+    <header>
+        <section class="header" id="header_top">
 
             <div class="brown_back_wrap">
                 <div class="brown_back"></div>
@@ -38,34 +39,71 @@
             <div class="header_Wrap">
                 <div class="header_wrap">
                     <div class="header_logo">
-                        <img src="images\logo.png" alt="小堀明日美のロゴ">
+                        <img src="images/logo.png" alt="小堀明日美のロゴ">
                     </div>
 
-                    <h1>ポートフォリオサイト｜Asumi Kobori</h1>
+                    <h1 class="PC_h1">ポートフォリオサイト｜Asumi Kobori</h1>
 
                 </div>
 
-                <div class="header_img"><img src="images\PC_header_main.png" alt="ヘッダー画像"></div>
+                <div class="header_img">
+                    <picture>
+                        <source srcset="images/SP_header_img@2x.png" media="(max-width: 1024px)">
+                        <img src="images/PC_header_main.png" alt="ヘッダー画像">
+                    </picture>
+                </div>
 
                 <nav class="pc_nav">
                     <ul>
-                        <li><a href=>CONCEPT</a></li>
-                        <li><a href=>SERVICE</a></li>
-                        <li><a href=>WORK</a></li>
-                        <li><a href=>CONTACT</a></li>
-                        <li><a href=>ABOUT ME</a></li>
+                        <li><a href=#CONCEPT>CONCEPT</a></li>
+                        <li><a href=#SERVICE>SERVICE</a></li>
+                        <li><a href=#WORK>WORK</a></li>
+                        <li><a href=#CONTACT>CONTACT</a></li>
+                        <li><a href=#ABOUT_ME>ABOUT ME</a></li>
+
+                    </ul>
+                </nav>
+
+                <h1 class="SP_h1">ポートフォリオサイト<br>Asumi Kobori</h1>
+
+                <div class="sp_btn">
+                    <span></span>
+                </div>
+
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href=#CONCEPT>CONCEPT</a></li>
+                        <li><a href=#SERVICE>SERVICE</a></li>
+                        <li><a href=#WORK>WORK</a></li>
+                        <li><a href=#CONTACT>CONTACT</a></li>
+                        <li><a href=#ABOUT_ME>ABOUT ME</a></li>
 
                     </ul>
                 </nav>
 
             </div>
 
-        </header>
+        </section>
 
-    </section>
+    </header>
 
+    <section class="CONCEPT" id="CONCEPT">
 
-    <section class="CONCEPT">
+        <!-- コンセプト・サービスの装飾 -->
+        <div class="sircle_1st">
+            <div class="sircle_1st_wrap">
+                <div class="sircle1"></div>
+                <div class="sircle2"></div>
+                <div class="sircle3"></div>
+                <div class="sircle4"></div>
+                <div class="sircle5"></div>
+                <div class="sircle6"></div>
+                <div class="sircle7"></div>
+                <div class="sircle8"></div>
+                <div class="sircle9"></div>
+                <div class="sircle10"></div>
+            </div>
+        </div>
 
         <p class="concept_title">「<span>一瞬</span>」の出逢いを、<br>
             「<span>一生</span>」の繋がりへ。
@@ -81,9 +119,9 @@
 
     </section>
 
-    <section class="SERVICE">
+    <section class="SERVICE" id="SERVICE">
 
-        <h2><img src="images\title_SERVICE.png" alt="サービス一覧"></h2>
+        <h2><img src="images/title_SERVICE.png" alt="サービス一覧"></h2>
 
         <div class="tab_box">
 
@@ -92,26 +130,26 @@
 
                 <div class="tab_panel1 active">
                     <picture>
-                        <source srcset="あああ" media="(max-width: 767px)">
-                        <img src="images\PC_SERVICE_img_LP.png" alt="LPデザインのイメージ画像">
+                        <source srcset="images/SP_service_LP@2x.png" media="(max-width: 767px)">
+                        <img src="images/PC_SERVICE_img_LP.png" alt="LPデザインのイメージ画像">
                     </picture>
                 </div>
                 <div class="tab_panel1">
                     <picture>
-                        <source srcset="あああ" media="(max-width: 767px)">
-                        <img src="images\PC_SERVICE_img_cording.png" alt="コーディングのイメージ画像">
+                        <source srcset="images/SP_service_cording@2x.png" media="(max-width: 767px)">
+                        <img src="images/PC_SERVICE_img_cording.png" alt="コーディングのイメージ画像">
                     </picture>
                 </div>
                 <div class="tab_panel1">
                     <picture>
-                        <source srcset="あああ" media="(max-width: 767px)">
-                        <img src="images\PC_SERVICE_img_photo.png" alt="撮影・画像編集のイメージ画像">
+                        <source srcset="images/SP_service_photo@2x.png" media="(max-width: 767px)">
+                        <img src="images/PC_SERVICE_img_photo.png" alt="撮影・画像編集のイメージ画像">
                     </picture>
                 </div>
                 <div class="tab_panel1">
                     <picture>
-                        <source srcset="あああ" media="(max-width: 767px)">
-                        <img src="images\PC_SERVICE_img_banner.png" alt="バナーデザインのイメージ画像">
+                        <source srcset="images/SP_service_banner@2x.png" media="(max-width: 767px)">
+                        <img src="images/PC_SERVICE_img_banner.png" alt="バナーデザインのイメージ画像">
                     </picture>
                 </div>
             </div>
@@ -119,12 +157,12 @@
             <div class="servise_p_frame">
                 <!-- SERVICEボタン -->
                 <div class="btn_area">
-                    <p class="tab_btn active tab_btn_w1"><img src="images\PC_SERVICE_subtitle_LP.png"
+                    <p class="tab_btn active tab_btn_w1"><img src="images/PC_SERVICE_subtitle_LP.png"
                             alt="サービス内容_LPデザイン"></p>
-                    <p class="tab_btn tab_btn_w2"><img src="images\PC_SERVICE_subtitle_cording.png" alt="サービス内容_コーディング">
+                    <p class="tab_btn tab_btn_w2"><img src="images/PC_SERVICE_subtitle_cording.png" alt="サービス内容_コーディング">
                     </p>
-                    <p class="tab_btn tab_btn_w3"><img src="images\PC_SERVICE_subtitle_photo.png" alt="サービス内容_写真"></p>
-                    <p class="tab_btn tab_btn_w4"><img src="images\PC_SERVICE_subtitle_banner.png" alt="サービス内容_バナーデザイン">
+                    <p class="tab_btn tab_btn_w3"><img src="images/PC_SERVICE_subtitle_photo.png" alt="サービス内容_写真"></p>
+                    <p class="tab_btn tab_btn_w4"><img src="images/PC_SERVICE_subtitle_banner.png" alt="サービス内容_バナーデザイン">
                     </p>
                 </div>
 
@@ -153,218 +191,7 @@
 
     </section>
 
-    <section class="WORK">
-
-        <h2><img src="images\title_WORK.png" alt="過去作品一覧"></h2>
-
-        <div class="work_wrap">
-
-            <div></div>
-
-            <div class="container">
-
-                <main>
-                    <div id="WORK_book">
-
-                        <div class="page_first">
-                            <div>
-                                <h3>過去作品一覧</h3>
-                                <ul>
-                                    <li>1.LPデザイン</li>
-                                    <li>2.コーディング</li>
-                                    <li>3.撮影・画像編集</li>
-                                    <li>4.バナー作成</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="page_LP">
-
-                            <div>
-                                <h3>LIFE hair design</h3>
-                                <p><img class="cheki" src="images/WORK_LP1@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>ヘアサロンのLPデザインを作成いたしました。コーポレートカラーのピンクを基調に、温かみを感じられるサイトになっています。</p>
-                            </div>
-
-                            <div>
-                                <h3>鋭意製作中！</h3>
-                                <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>製作中です。</p>
-                            </div>
-                        </div>
-
-                        <div class="page_LP">
-                            <div>
-                                <h3>people good<br>PC版</h3>
-                                <p><img class="cheki" src="images/WORK_LP2@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>企業とお客様をつなぐ顧客マッチングサイトのLPデザインを作成いたしました。</p>
-                            </div>
-
-                            <div>
-                                <h3>people good<br>スマホ版</h3>
-                                <p><img class="cheki" src="images/WORK_LP3@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>上記デザインのスマホ版を作成いたしました。</p>
-                            </div>
-                        </div>
-
-                        <div class="page_cording">
-                            <div>
-                                <h3>デザインカフェ</h3>
-                                <p><img class="cheki" src="images/WORK_cording_1@2x.png" alt="過去作品画像_コーディング"></p>
-                                <p>いただいたデザインカンプを元にコーディングいたしました。HTML/CSS/jQuery使用</p>
-                            </div>
-
-                            <div>
-                                <h3>鋭意製作中！</h3>
-                                <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>製作中です。</p>
-                            </div>
-
-                        </div>
-
-                        <div class="page_cording">
-                            <div>
-                                <h3>サービス一覧</h3>
-                                <p><img class="cheki" src="images/WORK_cording2.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>LPページのサービス一覧箇所のコーディングを担当いたしました。</p>
-                            </div>
-
-                            <div>
-                                <h3>鋭意製作中！</h3>
-                                <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
-                                <p>製作中です。</p>
-                            </div>
-
-                        </div>
-
-                        <div class="page_photo">
-                            <div>
-                                <h3>撮影</h3>
-                                <p><img class="cheki" src="images/WORK_photo1@2x.png" alt="過去作品画像_画像編集・撮影"></p>
-                                <p>茨城県常陸太田市で春頃行われる竜神峡鯉のぼりまつりにて撮影しました。</p>
-                            </div>
-
-                            <div>
-                                <h3>Photoshop<br>画像合成</h3>
-                                <p><img class="cheki" src="images/WORK_photo2@2x.png" alt="過去作品画像_画像編集・撮影"></p>
-                                <p>Photoshopにて切り抜き等を駆使し、2枚の画像を1枚に合成。スマホから線路が飛び出してくるような表現にしました。</p>
-                            </div>
-                        </div>
-
-                        <div class="page_photo">
-                            <div>
-                                <h3>Photoshop<br>画像合成</h3>
-                                <p><img class="cheki" src="images/WORK_photo3@2x.png" alt="過去作品画像_画像編集・撮影"></p>
-                                <p>Photoshopにて男性の画像を切り抜き・カットする加工を行いました。</p>
-                            </div>
-
-                            <div>
-                                <h3>撮影</h3>
-                                <p><img class="cheki" src="images/WORK_photo5@2x.png" alt="過去作品画像_画像編集・撮影"></p>
-                                <p>近所に咲いている向日葵に蝶がとまっていて綺麗でした。</p>
-                            </div>
-                        </div>
-
-                        <div class="page_banner">
-                            <div>
-                                <h3>バナー作成</h3>
-                                <p><img class="cheki" src="images/WORK_banner2.jpg" alt="過去作品画像_バナー"></p>
-                                <p>アウトドアイベントのバナーを作成いたしました。なお、背景の画像もPhotoshopで2枚の写真を1枚に合成しています。</p>
-                            </div>
-
-                            <div>
-                                <h3>バナー作成</h3>
-                                <p><img class="cheki" src="images/WORK_banner1.jpg" alt="過去作品画像_バナー"></p>
-                                <p>美容液のバナー広告をillustratorにて作成いたしました。</p>
-                            </div>
-                        </div>
-
-                        <div class="page_banner">
-
-                            <div>
-                                <h3>バナー用画像</h3>
-                                <p><img class="cheki" src="images/WORK_banner3@2x.png" alt="過去作品画像_バナー"></p>
-                                <p>写真をもとにバナーなどに使えるイラストをillustratorにて作成いたしました。</p>
-                            </div>
-
-                            <div>
-                                <h3>ポスター用画像</h3>
-                                <p><img class="cheki" src="images/WORK_banner4@2x.png" alt="過去作品画像_バナー"></p>
-                                <p>ポスター用画像をillustratorにて作成いたしました。イラスト素材がなくても作成可能です。お気軽にご相談ください。</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-            </div>
-
-            </main>
-        </div>
-
-        </div>
-
-    </section>
-
-    <section class="CONTACT" id="CONTACT">
-
-        <h2><img src="images/title_CONTACT.png" alt="ご依頼・お問い合わせ"></h2>
-
-        <p class="CONTACT_p1">ご依頼・お問い合わせは下記メールアドレスにて承っております。
-            <br>お気軽にご連絡ください。
-        </p>
-
-        <div><a href="mailto:asumikobori97@gmail.com"><img src="images/CONTACT_button@2x.png" alt="メール画面起動ボタン"></a>
-
-            <p class="CONTACT_p2">Push！
-                <br><span>※メール送信画面が開きます。</span>
-            </p>
-        </div>
-
-    </section>
-
-    <section class="ABOUT_ME" id="ABOUT_ME">
-
-        <h2><img src="images/title_ABOUTME.png" alt="自己紹介"></h2>
-
-        <div class="ABOUT_ME_wrap">
-
-            <div class="ABOUTME_p">
-                <p class="MYNAME">こぼり あすみ
-                    <br>小堀 明日美
-                </p>
-
-                <p class="ME">
-                    <br>大分県出身 茨城県在住
-                    <br>フリーランスWEBデザイナーとして活動中。
-                    <br>Web制作におけるデザインやHTML/CSSコーディング、
-                    <br>名刺やチラシ制作などを承っています。
-                </p>
-            </div>
-
-            <p class="myphoto"><img src="images/ABOUTME_myphoto@2x.png" alt="小堀明日美の顔写真"></p>
-
-        </div>
-
-
-    </section>
-
-
-    <section class="sircle_all">
-        <!-- コンセプト・サービスの装飾 -->
-        <div class="sircle_1st">
-            <div class="sircle_1st_wrap">
-                <div class="sircle1"></div>
-                <div class="sircle2"></div>
-                <div class="sircle3"></div>
-                <div class="sircle4"></div>
-                <div class="sircle5"></div>
-                <div class="sircle6"></div>
-                <div class="sircle7"></div>
-                <div class="sircle8"></div>
-                <div class="sircle9"></div>
-                <div class="sircle10"></div>
-            </div>
-        </div>
+    <section class="WORK" id="WORK">
 
         <div class="WORK_side">
             <div class="WORK_side_wrap">
@@ -373,6 +200,186 @@
             </div>
         </div>
 
+        <h2><img src="images/title_WORK.png" alt="過去作品一覧"></h2>
+
+        <div class="work_wrap">
+
+            <div class="container">
+
+
+                <div class="WORK_book" id="WORK_book">
+
+                    <div class="page_first">
+                        <div>
+                            <h3>過去作品一覧</h3>
+                            <ul>
+                                <li>1.LPデザイン</li>
+                                <li>2.コーディング</li>
+                                <li>3.撮影・画像編集</li>
+                                <li>4.バナー作成</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="page_LP">
+
+                        <div>
+                            <h3>LIFE hair design</h3>
+                            <p><img class="cheki" src="images/WORK_LP1@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>ヘアサロンのLPデザインを作成いたしました。コーポレートカラーのピンクを基調に、温かみを感じられるサイトになっています。</p>
+                        </div>
+
+                        <div>
+                            <h3>鋭意製作中！</h3>
+                            <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>製作中です。</p>
+                        </div>
+                    </div>
+
+                    <div class="page_LP">
+                        <div>
+                            <h3>people good<br>PC版</h3>
+                            <p><img class="cheki" src="images/WORK_LP2@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>企業とお客様をつなぐ顧客マッチングサイトのLPデザインを作成いたしました。</p>
+                        </div>
+
+                        <div>
+                            <h3>people good<br>スマホ版</h3>
+                            <p><img class="cheki" src="images/WORK_LP3@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>上記デザインのスマホ版を作成いたしました。</p>
+                        </div>
+                    </div>
+
+                    <div class="page_cording">
+                        <div>
+                            <h3>デザインカフェ</h3>
+                            <p><img class="cheki" src="images/WORK_cording_1@2x.png" alt="過去作品画像_コーディング"></p>
+                            <p>いただいたデザインカンプを元にコーディングいたしました。HTML/CSS/jQuery使用</p>
+                        </div>
+
+                        <div>
+                            <h3>鋭意製作中！</h3>
+                            <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>製作中です。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="page_cording">
+                        <div>
+                            <h3>サービス一覧</h3>
+                            <p><img class="cheki" src="images/WORK_cording2.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>LPページのサービス一覧箇所のコーディングを担当いたしました。</p>
+                        </div>
+
+                        <div>
+                            <h3>鋭意製作中！</h3>
+                            <p><img class="cheki" src="images/WORK_comingsoon@2x.png" alt="過去作品画像_LPデザイン"></p>
+                            <p>製作中です。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="page_photo">
+                        <div>
+                            <h3>撮影</h3>
+                            <p><img class="cheki" src="images/WORK_photo1@2x.png" alt="過去作品画像_画像編集・撮影"></p>
+                            <p>茨城県常陸太田市で春頃行われる竜神峡鯉のぼりまつりにて撮影しました。</p>
+                        </div>
+
+                        <div>
+                            <h3>Photoshop<br>画像合成</h3>
+                            <p><img class="cheki" src="images/WORK_photo2@2x.png" alt="過去作品画像_画像編集・撮影"></p>
+                            <p>Photoshopにて切り抜き等を駆使し、2枚の画像を1枚に合成。スマホから線路が飛び出してくるような表現にしました。</p>
+                        </div>
+                    </div>
+
+                    <div class="page_photo">
+                        <div>
+                            <h3>Photoshop<br>画像合成</h3>
+                            <p><img class="cheki" src="images/WORK_photo3@2x.png" alt="過去作品画像_画像編集・撮影"></p>
+                            <p>Photoshopにて男性の画像を切り抜き・カットする加工を行いました。</p>
+                        </div>
+
+                        <div>
+                            <h3>撮影</h3>
+                            <p><img class="cheki" src="images/WORK_photo5@2x.png" alt="過去作品画像_画像編集・撮影"></p>
+                            <p>近所に咲いている向日葵に蝶がとまっていて綺麗でした。</p>
+                        </div>
+                    </div>
+
+                    <div class="page_banner">
+                        <div>
+                            <h3>バナー作成</h3>
+                            <p><img class="cheki" src="images/WORK_banner2.jpg" alt="過去作品画像_バナー"></p>
+                            <p>アウトドアイベントのバナーを作成いたしました。なお、背景の画像もPhotoshopで2枚の写真を1枚に合成しています。</p>
+                        </div>
+
+                        <div>
+                            <h3>バナー作成</h3>
+                            <p><img class="cheki" src="images/WORK_banner1.jpg" alt="過去作品画像_バナー"></p>
+                            <p>美容液のバナー広告をillustratorにて作成いたしました。</p>
+                        </div>
+                    </div>
+
+                    <div class="page_banner">
+
+                        <div>
+                            <h3>バナー用画像</h3>
+                            <p><img class="cheki" src="images/WORK_banner3@2x.png" alt="過去作品画像_バナー"></p>
+                            <p>写真をもとにバナーなどに使えるイラストをillustratorにて作成いたしました。</p>
+                        </div>
+
+                        <div>
+                            <h3>ポスター用画像</h3>
+                            <p><img class="cheki" src="images/WORK_banner4@2x.png" alt="過去作品画像_バナー"></p>
+                            <p>ポスター用画像をillustratorにて作成いたしました。イラスト素材がなくても作成可能です。お気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="SP_WORK">
+
+            <div>
+                <div>
+                    <h3>LIFE hair design</h3>
+                    <p><img class="cheki" src="images/WORK_LP1@2x.png" alt="過去作品画像_LPデザイン"></p>
+                    <p>ヘアサロンのLPデザインを作成いたしました。コーポレートカラーのピンクを基調に、温かみを感じられるサイトになっています。</p>
+                </div>
+
+                <div>
+                    <h3>デザインカフェ</h3>
+                    <p><img class="cheki" src="images/WORK_cording_1@2x.png" alt="過去作品画像_コーディング"></p>
+                    <p>いただいたデザインカンプを元にコーディングいたしました。HTML/CSS/jQuery使用</p>
+                </div>
+
+            </div>
+
+
+            <div>
+                <h3>Photoshop<br>画像合成</h3>
+                <p><img class="cheki" src="images/WORK_photo2@2x.png" alt="過去作品画像_画像編集・撮影"></p>
+                <p>Photoshopにて切り抜き等を駆使し、2枚の画像を1枚に合成。スマホから線路が飛び出してくるような表現にしました。</p>
+            </div>
+
+            <div>
+                <h3>バナー作成</h3>
+                <p><img class="cheki" src="images/WORK_banner2.jpg" alt="過去作品画像_バナー"></p>
+                <p>アウトドアイベントのバナーを作成いたしました。なお、背景の画像もPhotoshopで2枚の写真を1枚に合成しています。</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="CONTACT" id="CONTACT">
 
         <div class="sircle_2nd">
             <div class="sircle_2nd_wrap">
@@ -387,8 +394,62 @@
                 <div class="sircle19"></div>
             </div>
         </div>
+
+        <h2><img src="images/title_CONTACT.png" alt="ご依頼・お問い合わせ"></h2>
+
+        <p class="CONTACT_p1">ご依頼・お問い合わせは下記メールアドレスにて承っております。
+            <br>お気軽にご連絡ください。
+        </p>
+
+        <div class="mail_btn"><a href="mailto:asumikobori97@gmail.com"><img src="images/CONTACT_button@2x.png"
+                    alt="メール画面起動ボタン"></a>
+
+            <p class="CONTACT_p2">／Push！＼
+                <br><span>※メール送信画面が開きます。</span>
+            </p>
+        </div>
+
     </section>
 
+    <footer>
+
+        <section class="ABOUT_ME" id="ABOUT_ME">
+
+            <h2><img src="images/title_ABOUTME.png" alt="自己紹介"></h2>
+
+            <div class="ABOUT_ME_wrap">
+
+                <div class="ABOUTME_p">
+                    <p class="MYNAME"><span>こぼり あすみ</span>
+                        <br>小堀 明日美
+                    </p>
+
+                    <p class="ME">
+                        <br>大分県出身 茨城県在住
+                        <br>フリーランスWEBデザイナーとして活動中。
+                        <br>Web制作におけるデザインやHTML/CSSコーディング、
+                        <br>名刺やチラシ制作などを承っています。
+                        <br>旅行と食べ歩きが大好きです。
+                    </p>
+                </div>
+
+                <p class="myphoto"><img src="images/ABOUTME_myphoto@2x.png" alt="小堀明日美の顔写真"></p>
+
+            </div>
+
+            <div class="footer">
+                <p><img src="images/footer_logo@2x.png" alt="小堀明日美のロゴマーク"></p>
+
+                <p>©Asumi Kobori</p>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <p class="to_top_button" id="fadeout"><a href="#header_top"><img src="images/TO_TOP_btn@2x.png" alt="トップへ戻るボタン"></a>
+    </p>
 
     <script>
 
@@ -396,8 +457,7 @@
         $('.tab_box .tab_btn').click(function () {
             // SERVICE写真
             var index = $('.tab_box .tab_btn').index(this);
-            $('.tab_box .tab_btn,.tab_box .tab_panel1').removeClass('active');
-            $('.tab_box .tab_btn,.tab_box .tab_panel2').removeClass('active');
+            $('.tab_box .tab_btn').removeClass('active');
             $(this).addClass('active');
             $('.tab_box .tab_panel1').hide();
             $('.tab_box .tab_panel1').eq(index).fadeIn();
@@ -426,8 +486,35 @@
                 }
             );
 
+            // スマホ版ハンバーガーメニュークリックで前面にメニュー
+            $('.sp_btn,sp_nav a').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
 
+            // トップへボタン50pxスクロールしたら表示
+            $(function () {
+                var pagetop = $('#fadeout');
+                pagetop.hide();
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        pagetop.fadeIn();
+                    } else {
+                        pagetop.fadeOut();
+                    }
+                });
 
+            });
+
+            // ページ内リンクをゆっくり
+            $('a[href^="#"]').click(function () {
+                let speed = 500;
+                let href = $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({ scrollTop: position }, speed, "swing");
+                return false;
+            });
         });
 
 

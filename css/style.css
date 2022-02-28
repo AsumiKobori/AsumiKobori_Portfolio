@@ -54,7 +54,7 @@ img {
 body {
     background-color: #cbad8c;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 /* ヘッダー */
@@ -103,7 +103,7 @@ header {
 
 .header_logo {
     margin-left: 18.4895%;
-    max-width: 230px;
+    width: 11.98%;
     z-index: 50;
 }
 
@@ -115,7 +115,8 @@ h1 {
 }
 
 .header_img {
-    width: 1500px;
+    width: 78.125%;
+    margin: 0 auto;
     z-index: 40;
     position: absolute;
     top: 60px;
@@ -126,11 +127,12 @@ h1 {
 }
 
 .header_img img {
-    width: 100%;
     margin: 0 auto;
+    max-width: 1500px;
 }
 
 .pc_nav {
+    width: 20vw;
     position: absolute;
     top: 100%;
     left: 25%;
@@ -139,13 +141,13 @@ h1 {
 
 .pc_nav li {
     color: white;
-    font-size: 29px;
-    line-height: 2.0258;
+    font-size: 1.5vw;
+    line-height: 2;
 }
 
 /* コンセプト */
 .CONCEPT {
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
     position: relative;
 }
@@ -283,203 +285,6 @@ h1 {
     text-align: start;
 }
 
-/* ワーク */
-
-.WORK {
-    margin-top: 100px;
-}
-
-.work_wrap {
-    position: relative;
-    background: #51330e;
-    width: 100%;
-    height: 650px;
-}
-
-.work_wrap::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: -0%;
-    top: 100%;
-    z-index: 10;
-    display: block;
-    height: 65px;
-    background-size: 65px 100%;
-    background-image: linear-gradient(135deg, #51330e 25%, transparent 25%),
-        linear-gradient(225deg, #51330e 25%, transparent 25%);
-    background-position: 0 0;
-}
-
-.WORK h2 {
-    text-align: center;
-}
-
-.WORK h2 img {
-    max-width: 120px;
-}
-
-#WORK_book {
-    position: relative;
-    top: 25px;
-    width: 960px;
-    height: 560px;
-    margin: 40px auto;
-    background-color: #764709;
-    border: solid 3px black;
-    z-index: 100;
-}
-
-.page_first,
-.page_LP,
-.page_cording,
-.page_photo,
-.page_banner {
-    background-color: rgb(236, 202, 149);
-    width: 480px;
-}
-
-.page_LP div,
-.page_cording div,
-.page_photo div,
-.page_banner div {
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin: 20px auto;
-    padding: 5px 15px;
-    box-sizing: border-box;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.page_LP img,
-.page_cording img,
-.page_photo img,
-.page_banner img {
-    width: 255px;
-    height: 240px;
-    text-align: center;
-}
-
-.page_LP h3,
-.page_cording h3,
-.page_photo h3,
-.page_banner h3 {
-    font-size: 19px;
-    color: #ff9000;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-align: center;
-}
-
-.page_LP p,
-.page_cording p,
-.page_photo p,
-.page_banner p {
-    font-size: 12px;
-    color: #472405;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-align: start;
-}
-
-.page_first {
-    color: #472405;
-    text-align: start;
-    font-size: 30px;
-}
-
-.page_first div {
-    position: absolute;
-    top: 175px;
-    left: 50px;
-}
-
-.page_first h3 {
-    padding: 20px 0;
-}
-
-.page_first li {
-    font-size: 20px;
-    line-height: 1.7;
-}
-
-/* コンタクト */
-
-.CONTACT {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.CONTACT h2 {
-    text-align: center;
-}
-
-.CONTACT h2 img {
-    max-width: 210px;
-}
-
-.CONTACT_p1 {
-    margin-top: 40px;
-    font-size: 25px;
-    line-height: 1.6;
-}
-
-.CONTACT_p2 {
-    margin-top: 5px;
-    font-size: 23px;
-    line-height: 1.6;
-}
-
-.CONTACT_p2 span {
-    font-size: 20px;
-}
-
-.CONTACT div {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* 自己紹介 */
-
-.ABOUT_ME {
-    margin-top: 100px;
-    padding-top: 70px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #51330e;
-    color: #ffffff;
-}
-
-.ABOUT_ME h2 {
-    text-align: center;
-}
-
-.ABOUT_ME h2 img {
-    max-width: 240px;
-}
-
-.ABOUT_ME_wrap {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.ABOUT_ME_wrap p {
-    color: #ffffff;
-}
-
-.MYNAME {
-    font-size: 24px;
-}
-
-.ME {
-    font-size: 14px;
-}
-
 /* 装飾コンセプトからサービスまで */
 
 .sircle_1st {
@@ -487,7 +292,7 @@ h1 {
     overflow: hidden;
     height: 1280px;
     position: absolute;
-    top: 590px;
+    top: 0;
     z-index: -1;
 }
 
@@ -507,7 +312,7 @@ h1 {
     background-color: #51330e;
     opacity: 0.3;
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 0;
 }
 
@@ -610,20 +415,144 @@ h1 {
     right: 135px;
 }
 
+/* ワーク */
+
+.WORK {
+    margin-top: 100px;
+    position: relative;
+}
+
+.work_wrap {
+    position: relative;
+    background: #51330e;
+    width: 100%;
+    height: 650px;
+}
+
+.work_wrap::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 65px;
+    background-size: 65px 100%;
+    background-image: linear-gradient(135deg, #51330e 25%, transparent 25%),
+        linear-gradient(225deg, #51330e 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+.WORK h2 {
+    text-align: center;
+}
+
+.WORK h2 img {
+    max-width: 120px;
+}
+
+#WORK_book {
+    position: relative;
+    top: 25px;
+    width: 960px;
+    height: 560px;
+    margin: 40px auto;
+    background-color: #764709;
+    border: solid 3px black;
+    z-index: 100;
+}
+
+.page_first,
+.page_LP,
+.page_cording,
+.page_photo,
+.page_banner {
+    background-color: rgb(236, 202, 149);
+    width: 480px;
+}
+
+.page_LP div,
+.page_cording div,
+.page_photo div,
+.page_banner div {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_LP img,
+.page_cording img,
+.page_photo img,
+.page_banner img {
+    width: 255px;
+    height: 240px;
+    text-align: center;
+}
+
+.page_LP h3,
+.page_cording h3,
+.page_photo h3,
+.page_banner h3 {
+    font-size: 19px;
+    color: #ff9000;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.page_LP p,
+.page_cording p,
+.page_photo p,
+.page_banner p {
+    font-size: 12px;
+    color: #472405;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: start;
+}
+
+.page_first {
+    color: #472405;
+    text-align: start;
+    font-size: 30px;
+}
+
+.page_first div {
+    position: absolute;
+    top: 175px;
+    left: 50px;
+}
+
+.page_first h3 {
+    padding: 20px 0;
+}
+
+.page_first li {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
 /* 装飾ワーク */
 .WORK_side {
     width: 100%;
     overflow: hidden;
-    height: 643px;
+    height: 650px;
     position: absolute;
     left: 0;
-    top: 2132px;
+    top: 120px;
 }
 
 .WORK_side_wrap {
-    width: 1920px;
+    width: 1800px;
     height: 650px;
-    margin-left: -960px;
+    margin-left: -900px;
     position: absolute;
     left: 50%;
 }
@@ -639,18 +568,53 @@ h1 {
 .right_pen {
     width: 440px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -60px;
+    right: -30px;
     z-index: 100;
+}
+
+/* コンタクト */
+
+.CONTACT {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.CONTACT h2 {
+    text-align: center;
+}
+
+.CONTACT h2 img {
+    max-width: 210px;
+}
+
+.CONTACT_p1 {
+    margin-top: 40px;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.CONTACT_p2 {
+    margin-top: 5px;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+.CONTACT_p2 span {
+    font-size: 20px;
+}
+
+.mail_btn {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* 装飾コンタクト */
 .sircle_2nd {
     width: 100%;
     overflow: hidden;
-    height: 1280px;
+    height: 700px;
     position: absolute;
-    top: 2860px;
     z-index: -1;
 }
 
@@ -760,4 +724,223 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 70px;
+}
+
+/* 自己紹介 */
+
+.ABOUT_ME {
+    margin-top: 150px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #51330e;
+    color: #ffffff;
+}
+
+.ABOUT_ME h2 {
+    text-align: center;
+}
+
+.ABOUT_ME h2 img {
+    max-width: 240px;
+}
+
+.ABOUT_ME_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 0 20px;
+}
+
+.ABOUT_ME_wrap p {
+    color: #ffffff;
+}
+
+.MYNAME {
+    font-size: 36px;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.MYNAME span {
+    font-size: 23px;
+}
+
+.ME {
+    font-size: 20px;
+    line-height: 2.6;
+    text-align: start;
+}
+
+/* フッター */
+
+.footer {
+    background-color: #51330e;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer p img {
+    width: 45px;
+}
+
+.to_top_button {
+    max-width: 160px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+}
+
+/* スマホ用記述を隠す */
+.sp_nav,
+.sp_btn,
+.SP_h1 {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .pc_nav,
+    .PC_h1,
+    .sircle_1st,
+    .sircle_2nd,
+    .WORK_side,
+    .WORK_book {
+        display: none;
+    }
+
+    .SP_h1 {
+        display: block;
+        text-align: start;
+        font-size: 23px;
+        position: absolute;
+        top: 28%;
+        left: 17%;
+        line-height: 1.6;
+    }
+
+    .header_logo {
+        margin-left: 3.66%;
+        width: 11.98%;
+        z-index: 50;
+    }
+
+    .header_img {
+        top: 130px;
+    }
+
+    .brown_back {
+        height: 75vh;
+    }
+
+    .brown_back::after {
+        height: 30%;
+    }
+
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 25px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background: #fff;
+        width: 35px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 10px;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background: #fff;
+        width: 35px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: rgba(000, 000, 000, 0.8);
+        width: 100%;
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp_nav li {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px;
+        color: #fff;
+    }
+
+    .CONCEPT {
+        margin-top: 100px;
+    }
+
+    .concept_title {
+        font-size: 75px;
+    }
+
+    .concept_sub {
+        font-size: 40px;
+    }
+
+    .concept_p {
+        font-size: 18px;
+    }
+
+    .servise_p_frame {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .WORK {
+        margin-top: 50px;
+    }
 }
