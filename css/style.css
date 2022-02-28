@@ -94,7 +94,6 @@ header {
 .header_wrap {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-top: 25px;
 }
 
@@ -127,12 +126,12 @@ h1 {
     top: 100%;
     left: 25%;
     z-index: 50;
-    line-height: 2.0258;
 }
 
 .pc_nav li {
     color: white;
     font-size: 29px;
+    line-height: 2.0258;
 }
 
 /* 装飾コンセプトからサービスまで */
@@ -151,6 +150,7 @@ h1 {
     margin-left: -890px;
     position: absolute;
     left: 50%;
+    z-index: -1;
 }
 
 .sircle1 {
@@ -265,7 +265,7 @@ h1 {
 
 /* コンセプト */
 .CONCEPT {
-    margin-top: 80px;
+    margin-top: 200px;
     text-align: center;
     position: relative;
 }
@@ -317,13 +317,14 @@ h2 img {
 
 .servise_p_frame {
     margin: 0 auto;
-    padding: 15px 15px 0;
+    padding: 15px 20px 0;
     box-sizing: border-box;
     max-width: 780px;
     background-color: #cbad8c;
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
     position: relative;
+    top: -50px;
 }
 
 .service_title {
@@ -457,27 +458,13 @@ h2 img {
     width: 480px;
 }
 
-.page_LP :first-child,
-.page_cording :first-child,
-.page_photo :first-child,
-.page_banner :first-child {
-    margin-top: 20px;
-}
-
-.page_LP :last-child,
-.page_cording :last-child,
-.page_photo :last-child,
-.page_banner :last-child {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .page_LP div,
 .page_cording div,
 .page_photo div,
 .page_banner div {
     background-color: #ffffff;
     margin: 0 auto;
+    margin: 20px auto;
     padding: 5px 15px;
     box-sizing: border-box;
     width: 400px;
@@ -502,6 +489,7 @@ h2 img {
     font-size: 19px;
     color: #ff9000;
     writing-mode: vertical-rl;
+    text-orientation: upright;
     text-align: center;
 }
 
@@ -509,17 +497,30 @@ h2 img {
 .page_cording p,
 .page_photo p,
 .page_banner p {
-    font-size: 15px;
+    font-size: 12px;
     color: #472405;
     writing-mode: vertical-rl;
+    text-orientation: upright;
     text-align: start;
 }
 
 .page_first {
-    margin: 0 auto;
     color: #472405;
+    text-align: start;
+    font-size: 30px;
 }
 
-.page_first ul {
-    font-size: 15px;
+.page_first div {
+    position: absolute;
+    top: 175px;
+    left: 50px;
+}
+
+.page_first h3 {
+    padding: 20px 0;
+}
+
+.page_first li {
+    font-size: 20px;
+    line-height: 1.7;
 }
