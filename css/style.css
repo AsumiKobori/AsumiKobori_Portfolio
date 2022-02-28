@@ -183,7 +183,7 @@ h1 {
     text-align: center;
 }
 
-h2 img {
+.SERVICE h2 img {
     max-width: 210px;
 }
 
@@ -291,8 +291,9 @@ h2 img {
 
 .work_wrap {
     position: relative;
-    background: #472405;
-    height: 700px;
+    background: #51330e;
+    width: 100%;
+    height: 650px;
 }
 
 .work_wrap::after {
@@ -305,8 +306,8 @@ h2 img {
     display: block;
     height: 65px;
     background-size: 65px 100%;
-    background-image: linear-gradient(135deg, #472405 25%, transparent 25%),
-        linear-gradient(225deg, #472405 25%, transparent 25%);
+    background-image: linear-gradient(135deg, #51330e 25%, transparent 25%),
+        linear-gradient(225deg, #51330e 25%, transparent 25%);
     background-position: 0 0;
 }
 
@@ -314,7 +315,7 @@ h2 img {
     text-align: center;
 }
 
-h2 img {
+.WORK h2 img {
     max-width: 120px;
 }
 
@@ -405,6 +406,80 @@ h2 img {
     line-height: 1.7;
 }
 
+/* コンタクト */
+
+.CONTACT {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.CONTACT h2 {
+    text-align: center;
+}
+
+.CONTACT h2 img {
+    max-width: 210px;
+}
+
+.CONTACT_p1 {
+    margin-top: 40px;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.CONTACT_p2 {
+    margin-top: 5px;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+.CONTACT_p2 span {
+    font-size: 20px;
+}
+
+.CONTACT div {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 自己紹介 */
+
+.ABOUT_ME {
+    margin-top: 100px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #51330e;
+    color: #ffffff;
+}
+
+.ABOUT_ME h2 {
+    text-align: center;
+}
+
+.ABOUT_ME h2 img {
+    max-width: 240px;
+}
+
+.ABOUT_ME_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ABOUT_ME_wrap p {
+    color: #ffffff;
+}
+
+.MYNAME {
+    font-size: 24px;
+}
+
+.ME {
+    font-size: 14px;
+}
+
 /* 装飾コンセプトからサービスまで */
 
 .sircle_1st {
@@ -462,7 +537,7 @@ h2 img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    border: solid 2px #51330e;
+    border: solid 2px #472405;
     opacity: 0.3;
     position: absolute;
     bottom: 0;
@@ -495,7 +570,7 @@ h2 img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    border: solid 2px #51330e;
+    border: solid 2px #472405;
     opacity: 0.3;
     position: absolute;
     top: 255px;
@@ -528,11 +603,45 @@ h2 img {
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    background-color: #51330e;
+    background-color: #472405;
     opacity: 0.3;
     position: absolute;
     top: 800px;
     right: 135px;
+}
+
+/* 装飾ワーク */
+.WORK_side {
+    width: 100%;
+    overflow: hidden;
+    height: 643px;
+    position: absolute;
+    left: 0;
+    top: 2132px;
+}
+
+.WORK_side_wrap {
+    width: 1920px;
+    height: 650px;
+    margin-left: -960px;
+    position: absolute;
+    left: 50%;
+}
+
+.left_pen {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.right_pen {
+    width: 440px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
 /* 装飾コンタクト */
@@ -562,5 +671,93 @@ h2 img {
     opacity: 0.3;
     position: absolute;
     top: 15px;
-    left: 210px;
+    left: 135px;
+}
+
+.sircle12 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 2px #472405;
+    opacity: 0.3;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.sircle13 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #ffd400;
+    opacity: 0.3;
+    position: absolute;
+    top: 180px;
+    left: 265px;
+}
+
+.sircle14 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #ff9000;
+    opacity: 0.3;
+    position: absolute;
+    top: 360px;
+    left: 195px;
+}
+
+.sircle15 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    top: 535px;
+    left: 200px;
+}
+
+.sircle16 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 310px;
+}
+
+.sircle17 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #ff9000;
+    opacity: 0.3;
+    position: absolute;
+    top: 90px;
+    right: 130px;
+}
+
+.sircle18 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    top: 225px;
+    right: 0;
+}
+
+.sircle19 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #51330e;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    right: 70px;
 }
