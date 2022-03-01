@@ -500,9 +500,10 @@ h1 {
 .page_photo h3,
 .page_banner h3 {
     font-size: 19px;
+    line-height: 1.6;
     color: #ff9000;
     writing-mode: vertical-rl;
-    text-orientation: upright;
+    /* text-orientation: upright; */
     text-align: center;
     vertical-align: text-bottom;
 }
