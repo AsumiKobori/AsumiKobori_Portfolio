@@ -147,7 +147,7 @@ h1 {
 
 /* コンセプト */
 .CONCEPT {
-    margin-top: 150px;
+    margin-top: 40px;
     text-align: center;
     position: relative;
 }
@@ -223,7 +223,8 @@ h1 {
 }
 
 .tab_box .tab_btn {
-    width: 188px;
+    max-width: 188px;
+    margin: 0 auto;
     padding: 8px 0;
     text-align: center;
     cursor: pointer;
@@ -231,7 +232,7 @@ h1 {
 }
 
 .tab_box .tab_btn + .tab_btn {
-    margin-left: 110px;
+    margin-left: 5.7291%;
 }
 
 .tab_box .tab_btn:hover {
@@ -283,6 +284,8 @@ h1 {
 
 .tab_panel2 p {
     text-align: start;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* 装飾コンセプトからサービスまで */
@@ -551,9 +554,9 @@ h1 {
 }
 
 .WORK_side_wrap {
-    width: 1800px;
+    width: 1880px;
     height: 650px;
-    margin-left: -900px;
+    margin-left: -959px;
     position: absolute;
     left: 50%;
 }
@@ -753,6 +756,7 @@ h1 {
     margin: 0 auto;
     margin-top: 45px;
     padding: 0 20px;
+    align-items: flex-end;
 }
 
 .ABOUT_ME_wrap p {
@@ -763,6 +767,7 @@ h1 {
     font-size: 36px;
     margin-top: 10px;
     text-align: start;
+    line-height: 1.6;
 }
 
 .MYNAME span {
@@ -804,19 +809,26 @@ h1 {
 /* スマホ用記述を隠す */
 .sp_nav,
 .sp_btn,
-.SP_h1 {
+.SP_h1,
+.SP_WORK,
+.myphoto_SP,
+.concept_p_SP {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
+    /* PC用記述を隠す */
     .pc_nav,
     .PC_h1,
     .sircle_1st,
     .sircle_2nd,
     .WORK_side,
-    .WORK_book {
+    .WORK_book,
+    .myphoto_PC {
         display: none;
     }
+
+    /* ヘッダー */
 
     .SP_h1 {
         display: block;
@@ -836,6 +848,7 @@ h1 {
 
     .header_img {
         top: 130px;
+        z-index: 0;
     }
 
     .brown_back {
@@ -862,6 +875,7 @@ h1 {
         display: block;
         position: relative;
         top: 10px;
+        z-index: 600;
     }
 
     .sp_btn span::before,
@@ -902,7 +916,8 @@ h1 {
         top: 0;
         left: 0;
         height: 100vh;
-        background: rgba(000, 000, 000, 0.8);
+        background: white;
+        opacity: 0.7;
         width: 100%;
     }
 
@@ -915,10 +930,12 @@ h1 {
 
     .sp_nav li {
         text-align: center;
-        font-size: 18px;
+        font-size: 21px;
         padding: 15px;
-        color: #fff;
+        color: #ff9000;
     }
+
+    /* コンセプト */
 
     .CONCEPT {
         margin-top: 100px;
@@ -937,11 +954,190 @@ h1 {
     }
 
     .servise_p_frame {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
     }
+
+    /* ワーク */
 
     .WORK {
         margin-top: 50px;
     }
+    .work_wrap {
+        margin-top: 40px;
+        height: 155vh;
+    }
+
+    .SP_WORK {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    .SP_work_ul {
+        width: 93%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .SP_work_ul li {
+        width: 40%;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 10px;
+        box-sizing: border-box;
+        border: solid 2px black;
+    }
+
+    .SP_work_ul img {
+        margin: 0 auto;
+        max-width: 395px;
+        text-align: center;
+    }
+
+    .SP_work_ul li h3 {
+        color: #ff9000;
+        padding: 5px 0;
+        font-size: 18px;
+    }
+
+    .SP_work_p {
+        color: #472405;
+        font-size: 15px;
+    }
+
+    /* コンタクト */
+
+    .CONTACT_p1 {
+        font-size: 18px;
+    }
+
+    /* .CONTACT_p2{
+
+    } */
+
+    .CONTACT_p2 {
+        font-size: 18px;
+    }
+
+    .CONTACT_p2 span {
+        font-size: 15px;
+    }
+
+    /* 自己紹介 */
+
+    .myphoto_SP {
+        display: block;
+        max-width: 500px;
+    }
+
+    .ABOUT_ME_wrap {
+        display: block;
+    }
+
+    .ABOUTME_p {
+        margin-top: 10px;
+    }
+
+    .ABOUT_ME_wrap p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .MYNAME {
+        font-size: 23px;
+    }
+
+    .CONTACT_p2 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .CONTACT_p2 span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* ヘッダー */
+
+    .brown_back {
+        height: 300px;
+    }
+
+    .SP_h1 {
+        font-size: 15px;
+    }
+
+    .sp_btn {
+        top: 45%;
+        right: 19px;
+    }
+
+    /* コンセプト */
+
+    .CONCEPT {
+        margin-top: 0;
+    }
+
+    .concept_title {
+        font-size: 34px;
+    }
+
+    .concept_sub {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .concept_p_PC {
+        display: none;
+    }
+
+    .concept_p_SP {
+        display: block;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    /* サービス */
+
+    .SERVICE {
+        margin-top: 60px;
+    }
+
+    .SERVICE h2 img {
+        max-width: 105px;
+    }
+
+    .service_img {
+        margin-top: 25px;
+    }
+
+    .servise_p_frame {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 0;
+    }
+
+    .tab_box .btn_area {
+        margin: 0;
+    }
+
+    /* .tab_btn_w1 img {
+        max-width: 108.252px;
+    }
+
+    .tab_btn_w2 img {
+        max-width: 79.0664px;
+    }
+
+    .tab_btn_w3 img {
+        max-width: 54.126px;
+    }
+
+    .tab_btn_w4 img {
+        max-width: 92.2441px;
+    } */
 }
