@@ -868,10 +868,10 @@ h1 {
         right: 25px;
         height: 30px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 300;
     }
     .sp_btn span {
-        background: #fff;
+        background: #ff9000;
         width: 35px;
         height: 3px;
         display: block;
@@ -883,7 +883,7 @@ h1 {
     .sp_btn span::before,
     .sp_btn span::after {
         content: "";
-        background: #fff;
+        background: #ff9000;
         width: 35px;
         height: 3px;
         display: block;
@@ -917,10 +917,11 @@ h1 {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
-        background: white;
-        opacity: 0.7;
+        height: 320px;
+        background: #fff;
+        opacity: 0.8;
         width: 100%;
+        z-index: 100;
     }
 
     .sp_nav ul {
@@ -1087,6 +1088,7 @@ h1 {
 
     .CONCEPT {
         margin-top: 0;
+        z-index: 0;
     }
 
     .concept_title {
