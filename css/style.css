@@ -752,10 +752,9 @@ h1 {
 .ABOUT_ME_wrap {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 45px;
-    padding: 0 20px;
     align-items: center;
 }
 
@@ -767,7 +766,6 @@ h1 {
     font-size: 36px;
     margin-top: 10px;
     text-align: start;
-    line-height: 1.6;
 }
 
 .MYNAME span {
@@ -775,9 +773,18 @@ h1 {
 }
 
 .ME {
-    font-size: 20px;
-    line-height: 2.6;
+    font-size: 19px;
+    line-height: 1.8;
     text-align: start;
+}
+
+.ABOUTME_p,
+.myphoto {
+    width: 50%;
+}
+
+.myphoto img {
+    width: 100%;
 }
 
 /* フッター */
