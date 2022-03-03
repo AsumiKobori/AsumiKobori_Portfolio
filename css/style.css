@@ -1065,6 +1065,11 @@ h1 {
         font-size: 18px;
     }
 
+    .ABOUTME_p {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
     .CONTACT_p2 {
         font-size: 16px;
         line-height: 1.6;
