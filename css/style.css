@@ -756,7 +756,7 @@ h1 {
     margin: 0 auto;
     margin-top: 45px;
     padding: 0 20px;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .ABOUT_ME_wrap p {
@@ -812,7 +812,8 @@ h1 {
 .SP_h1,
 .SP_WORK,
 .myphoto_SP,
-.concept_p_SP {
+.concept_p_SP,
+.CONTACT_p1_SP {
     display: none;
 }
 
@@ -824,7 +825,8 @@ h1 {
     .sircle_2nd,
     .WORK_side,
     .WORK_book,
-    .myphoto_PC {
+    .myphoto_PC,
+    .CONTACT_p1_PC {
         display: none;
     }
 
@@ -1048,6 +1050,11 @@ h1 {
 
     .MYNAME {
         font-size: 23px;
+        line-height: 1.1;
+    }
+
+    .MYNAME span {
+        font-size: 18px;
     }
 
     .CONTACT_p2 {
@@ -1072,8 +1079,8 @@ h1 {
     }
 
     .sp_btn {
-        top: 45%;
-        right: 19px;
+        top: 20px;
+        right: 20px;
     }
 
     /* コンセプト */
@@ -1123,21 +1130,106 @@ h1 {
 
     .tab_box .btn_area {
         margin: 0;
+        padding-top: 10px;
     }
 
-    /* .tab_btn_w1 img {
-        max-width: 108.252px;
+    .tab_box .tab_btn + .tab_btn {
+        margin-left: 0;
     }
 
-    .tab_btn_w2 img {
-        max-width: 79.0664px;
+    .tab_panel2 p {
+        padding: 0 10px;
+        font-size: 12px;
     }
 
-    .tab_btn_w3 img {
-        max-width: 54.126px;
+    .to_top_button {
+        width: 20%;
     }
 
-    .tab_btn_w4 img {
-        max-width: 92.2441px;
-    } */
+    /* ワーク */
+
+    .WORK {
+        margin-top: 60px;
+    }
+
+    .work_wrap {
+        margin-top: 25px;
+    }
+
+    .SP_work_ul li h3 {
+        font-size: 13px;
+    }
+
+    .WORK h2 img {
+        max-width: 60px;
+    }
+
+    .SP_work_p {
+        font-size: 12px;
+    }
+
+    .work_wrap {
+        height: 120vh;
+    }
+
+    /* コンタクト */
+
+    .CONTACT {
+        margin-top: 60px;
+    }
+
+    .CONTACT h2 img {
+        max-width: 105px;
+    }
+
+    .CONTACT_p1 {
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    .mail_btn {
+        max-width: 250px;
+        padding-top: 25px;
+    }
+
+    .CONTACT_p2 {
+        font-size: 15px;
+    }
+
+    .CONTACT_p2 span {
+        font-size: 12px;
+    }
+
+    .CONTACT_p1_SP {
+        display: block;
+    }
+
+    /* 自己紹介 */
+
+    .ABOUT_ME {
+        margin-top: 60px;
+        padding-top: 25px;
+    }
+
+    .ABOUT_ME h2 img {
+        max-width: 120px;
+    }
+
+    .ABOUT_ME_wrap {
+        margin-top: 25px;
+    }
+
+    .MYNAME {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .MYNAME span {
+        font-size: 12px;
+    }
+
+    .ME {
+        font-size: 13px;
+        line-height: 1.6;
+    }
 }
