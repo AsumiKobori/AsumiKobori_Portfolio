@@ -836,8 +836,7 @@ h1 {
     .sircle_2nd,
     .WORK_side,
     .WORK_book,
-    .myphoto_PC,
-    .CONTACT_p1_PC {
+    .myphoto_PC {
         display: none;
     }
 
@@ -1209,6 +1208,10 @@ h1 {
     }
 
     /* コンタクト */
+
+    .CONTACT_p1_PC {
+        display: none;
+    }
 
     .CONTACT {
         margin-top: 60px;
