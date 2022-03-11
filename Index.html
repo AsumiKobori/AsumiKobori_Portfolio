@@ -71,7 +71,7 @@
                 </div>
 
                 <nav class="sp_nav">
-                    <ul>
+                    <ul id="sp_nav_all">
                         <li><a href=#CONCEPT>CONCEPT</a></li>
                         <li><a href=#SERVICE>SERVICE</a></li>
                         <li><a href=#WORK>WORK</a></li>
@@ -508,6 +508,10 @@
             $('.sp_btn,sp_nav a').click(function () {
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open')
+            });
+
+            $('#sp_nav_all a[href]').on('click', function (event) {
+                $('.sp_btn').trigger('click');
             });
 
             // トップへボタン200pxスクロールしたら表示

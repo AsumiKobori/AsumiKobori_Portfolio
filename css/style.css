@@ -288,6 +288,10 @@ h1 {
     line-height: 1.6;
 }
 
+.tab_panel2 {
+    height: 40px;
+}
+
 /* 装飾コンセプトからサービスまで */
 
 .sircle_1st {
@@ -861,7 +865,7 @@ h1 {
     }
 
     .brown_back {
-        height: 75vh;
+        height: 45vh;
     }
 
     .brown_back::after {
@@ -948,7 +952,7 @@ h1 {
     /* コンセプト */
 
     .CONCEPT {
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     .concept_title {
@@ -975,7 +979,7 @@ h1 {
     }
     .work_wrap {
         margin-top: 40px;
-        height: 155vh;
+        height: 1000px;
     }
 
     .SP_WORK {
@@ -1080,6 +1084,22 @@ h1 {
     }
 }
 
+@media screen and (max-width: 950px) {
+    .CONCEPT {
+        margin-top: 260px;
+    }
+
+    .work_wrap {
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .CONCEPT {
+        margin-top: 200px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     /* ヘッダー */
 
@@ -1154,6 +1174,8 @@ h1 {
     .tab_panel2 p {
         padding: 0 10px;
         font-size: 12px;
+        width: 70%;
+        margin: 0 auto;
     }
 
     .to_top_button {
@@ -1183,7 +1205,7 @@ h1 {
     }
 
     .work_wrap {
-        height: 120vh;
+        height: 800px;
     }
 
     /* コンタクト */
@@ -1252,6 +1274,10 @@ h1 {
     .CONCEPT {
         margin-top: 130px;
     }
+
+    .work_wrap {
+        height: 700px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1262,12 +1288,26 @@ h1 {
 
 @media screen and (max-width: 500px) {
     .CONCEPT {
-        margin-top: 50px;
+        margin-top: 30px;
+    }
+
+    .work_wrap {
+        height: 630px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
+    .work_wrap {
+        height: 580px;
+    }
+
     .CONCEPT {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .CONCEPT {
+        margin-top: -30px;
     }
 }
