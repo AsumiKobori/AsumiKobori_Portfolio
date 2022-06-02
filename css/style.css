@@ -554,24 +554,6 @@ h1 {
     line-height: 1.7;
 }
 
-/* 装飾ワーク */
-.WORK_side {
-    width: 100%;
-    overflow: hidden;
-    height: 650px;
-    position: absolute;
-    left: 0;
-    top: 120px;
-}
-
-.WORK_side_wrap {
-    width: 1880px;
-    height: 650px;
-    margin-left: -959px;
-    position: absolute;
-    left: 50%;
-}
-
 .left_pen {
     width: 500px;
     position: absolute;
@@ -628,8 +610,9 @@ h1 {
     font-size: 32px;
     color: #ffffff;
     background-color: #ff9000;
+    max-width: 600px;
     padding: 32px;
-    margin: 32px 0 10px;
+    margin: 16px auto;
     border-radius: 50px;
 }
 
@@ -850,7 +833,6 @@ h1 {
     .PC_h1,
     .sircle_1st,
     .sircle_2nd,
-    .WORK_side,
     .WORK_book,
     .myphoto_PC {
         display: none;
@@ -1052,12 +1034,13 @@ h1 {
     }
 
     .mail_btn p {
-        font-size: 14px;
+        font-size: 16px;
         color: #ffffff;
         background-color: #ff9000;
+        max-width: 300px;
         padding: 16px;
         border-radius: 50px;
-        margin: 0 auto;
+        margin: 16px auto;
     }
 
     /* 自己紹介 */
@@ -1248,9 +1231,8 @@ h1 {
         font-size: 12px;
     }
 
-    .mail_btn {
-        max-width: 250px;
-        padding-top: 25px;
+    .mail_btn p {
+        margin: 16px auto;
     }
 
     .CONTACT_p2 {
