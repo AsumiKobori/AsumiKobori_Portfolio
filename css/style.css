@@ -22,9 +22,10 @@ dl {
     padding: 0;
     line-height: 1;
     color: #472405;
-    font-family: "Hannari", "A1 Mincho", "游明朝", "YuMincho",
-        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+    font-family: zen-maru-gothic, sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-feature-settings: "palt";
 }
 
@@ -108,7 +109,7 @@ header {
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 16px;
     color: white;
     margin-right: 2.6041%;
     z-index: 50;
@@ -153,7 +154,10 @@ h1 {
 }
 
 .concept_title {
-    font-size: 100px;
+    font-family: "Hannari", "A1 Mincho", "游明朝", "YuMincho",
+        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", serif;
+    font-size: 80px;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -172,7 +176,7 @@ h1 {
 
 .concept_p {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
@@ -507,7 +511,7 @@ h1 {
 .page_cording h3,
 .page_photo h3,
 .page_banner h3 {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.6;
     color: #ff9000;
     writing-mode: vertical-rl;
@@ -520,7 +524,8 @@ h1 {
 .page_cording p,
 .page_photo p,
 .page_banner p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.2;
     color: #472405;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -541,10 +546,11 @@ h1 {
 
 .page_first h3 {
     padding: 20px 0;
+    font-size: 24px;
 }
 
 .page_first li {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -599,23 +605,32 @@ h1 {
 
 .CONTACT_p1 {
     margin-top: 40px;
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 .CONTACT_p2 {
     margin-top: 5px;
-    font-size: 23px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
 .CONTACT_p2 span {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .mail_btn {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.mail_btn p {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #ff9000;
+    padding: 32px;
+    margin: 32px 0 10px;
+    border-radius: 50px;
 }
 
 /* 装飾コンタクト */
@@ -1028,16 +1043,21 @@ h1 {
         font-size: 18px;
     }
 
-    /* .CONTACT_p2{
-
-    } */
-
     .CONTACT_p2 {
         font-size: 18px;
     }
 
     .CONTACT_p2 span {
         font-size: 15px;
+    }
+
+    .mail_btn p {
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #ff9000;
+        padding: 16px;
+        border-radius: 50px;
+        margin: 0 auto;
     }
 
     /* 自己紹介 */
