@@ -53,7 +53,7 @@ img {
 }
 
 body {
-    background-color: #cbad8c;
+    background-color: #d8bfa3;
     margin: 0 auto;
     width: 100%;
 }
@@ -78,7 +78,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: #cbad8c;
+    background: #d8bfa3;
     height: 65%;
 }
 
@@ -207,7 +207,7 @@ h1 {
     padding: 15px 20px 0;
     box-sizing: border-box;
     max-width: 780px;
-    background-color: #cbad8c;
+    background-color: #d8bfa3;
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
     position: relative;
