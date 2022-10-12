@@ -57,6 +57,17 @@ body {
     width: 100%;
 }
 
+/* ふわっとでる */
+.scroll_up {
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.scroll_up.on {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* ヘッダー */
 
 .brown_back {
