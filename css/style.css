@@ -1025,9 +1025,8 @@ h1 {
         width: 40%;
         margin: 20px auto;
         background-color: #ffffff;
-        padding: 10px;
+        padding: 20px;
         box-sizing: border-box;
-        border: solid 2px black;
     }
 
     .SP_work_ul img {
@@ -1244,6 +1243,12 @@ h1 {
 
     .work_wrap {
         margin-top: 25px;
+    }
+
+    .SP_work_ul li {
+        width: 47%;
+        margin: 10px 0;
+        padding: 8px;
     }
 
     .SP_work_ul li h3 {
